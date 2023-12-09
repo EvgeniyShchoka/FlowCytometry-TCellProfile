@@ -4,8 +4,10 @@
 
 ### 1. [**Code_clusterization.ipynb**](/Code_clusterization.ipynb)
 
-Data Preprocessing: involves deletion of doublets and outliers, standardization, and normalization of the flow cytometry data.       Dimensionality Reduction: implies UMAP to visualize multidimenstional data.     Clusterization: identification of distinct cell populations.     Identification of Cell Populations: the identification of specific cell populations based on their surface markers.
-
+Data Preprocessing: involves deletion of doublets and outliers, standardization, and normalization of the flow cytometry data.
+Dimensionality Reduction: implies UMAP to visualize multidimenstional data.
+Clusterization: identification of distinct cell populations.
+Identification of Cell Populations: the identification of specific cell populations based on their surface markers.
 
 ### 2. [**Code_classification.ipynb**](/Code_classification.ipynb)
 
@@ -13,9 +15,9 @@ Model Evaluation and Selection: detection of the optimal machine learning model 
 
 ## Data Acquisition
 
-The dataset used in this study was obtained from [ImmPort](https://www.immport.org/home), a publicly available immunology database and analysis portal. Specifically, the data were sourced under the study accession SDY702, titled ‘Human T Cell Profile’. This dataset comprises data obtained from immune cells extracted from the Mesenteric lymph node.
+The dataset used in this study was obtained from [ImmPort](https://www.immport.org/home), a publicly available immunology database and analysis portal. Specifically, the data were sourced under the study accession SDY702, titled ‘Human T Cell Profile’. The particular dataset used in analysis comprises data obtained from immune cells extracted from the Mesenteric lymph node.
 
-The dataset is associated with the research conducted by Thome JJ, Yudanin N, Ohmura Y, Kubota M, Grinshpun B, Sathaliyawala T, Kato T, Lerner H, Shen Y, and Farber DL, and their findings are detailed in the article titled "Spatial map of human T cell compartmentalization and maintenance over decades of life," published in [Cell](https://pubmed.ncbi.nlm.nih.gov/25417158/) on November 6, 2014. This seminal work provides critical insights into the spatial and functional organization of human T cells throughout the human lifespan.
+The dataset is associated with the research conducted by Thome JJ, Yudanin N, Ohmura Y, Kubota M, Grinshpun B, Sathaliyawala T, Kato T, Lerner H, Shen Y, and Farber DL, and their findings are detailed in the article titled "Spatial map of human T cell compartmentalization and maintenance over decades of life," published in [Cell](https://pubmed.ncbi.nlm.nih.gov/25417158/) on November 6, 2014.
 
 ## Setting Up the Conda Environment and working directory
 
