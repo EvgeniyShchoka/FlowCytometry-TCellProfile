@@ -2,12 +2,12 @@
 
 ## Project Structure
 
-### 1.[**Code_clusterization.ipynb**](/Code_clusterization.ipynb)
+### 1. [**Code_clusterization.ipynb**](/Code_clusterization.ipynb)
 
 Data Preprocessing: involves deletion of doublets and outliers, standardization, and normalization of the flow cytometry data.       Dimensionality Reduction: implies UMAP to visualize multidimenstional data.     Clusterization: identification of distinct cell populations.     Identification of Cell Populations: the identification of specific cell populations based on their surface markers.
 
 
-### 2.[**Code_classification.ipynb**](/Code_classification.ipynb)
+### 2. [**Code_classification.ipynb**](/Code_classification.ipynb)
 
 Model Evaluation and Selection: detection of the optimal machine learning model for the characterization of immune cells.
 
