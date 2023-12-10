@@ -11,7 +11,7 @@ Identification of Cell Populations: the identification of specific cell populati
 
 ### 2. [**Code_classification.ipynb**](/Code_classification.ipynb)
 
-Model Evaluation and Selection: detection of the optimal machine learning model for the characterization of immune cells.
+Model Evaluation and Selection: detection of the optimal machine learning model for the characterization of immune cells. For classification Logistic regression, K-Nearest Neighbor, Naive Bayes, Random Forest, and Neural Network were used. Optimal hyperparameters were set using GridSearchCV().
 
 ## Data Acquisition
 
@@ -48,7 +48,8 @@ conda activate myenv
 Once your environment is activated, you can install specific versions of packages required for your project. For example:
 
 ```
-conda install numpy=1.26.2 pandas=2.1.1 scikit-learn=1.3.2 seaborn=0.12.2 flowcal=1.3.0 scipy=1.11.4 umap-learn=0.5.5 hdbscan=0.8.33 joblib=1.2.0
+conda install tensorflow=2.15.0 numpy=1.26.2 pandas=2.1.1 scikit-learn=1.3.2 seaborn=0.12.2 scipy=1.11.4 joblib=1.2.0
+pip install flowcal==1.3.0 umap-learn==0.5.5 hdbscan==0.8.33
 ```
 
 ### Setting the Working Directory
