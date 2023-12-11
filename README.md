@@ -21,8 +21,6 @@ The dataset is associated with the research conducted by Thome JJ, Yudanin N, Oh
 
 ## Setting Up the Conda Environment and working directory
 
-To ensure the reproducibility of the code, it is essential to use the same versions of the packages and libraries as used in the original development. This can be achieved using Conda, a package and environment management system. Follow the steps below to set up your environment:
-
 ### Installing Conda
 
 If you don't already have Conda installed, you can download and install it from [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/) (a minimal installer for Conda) or [Anaconda](https://www.anaconda.com/download) (which includes Conda, Python, and a few other packages).
@@ -31,7 +29,7 @@ If you don't already have Conda installed, you can download and install it from 
 
 Open your terminal: Launch your terminal or command prompt.
 
-Create a new Conda environment: Replace myenv with your desired environment name, and x.x with the Python version you wish to use.
+Create a new Conda environment:
 
 ```
 conda create --name myenv python=3.11.6 
@@ -45,7 +43,7 @@ conda activate myenv
 
 ### Installing Specific Package Versions
 
-Once your environment is activated, you can install specific versions of packages required for your project. For example:
+Once your environment is activated, you can install specific versions of packages required for your project:
 
 ```
 conda install tensorflow=2.15.0 numpy=1.26.2 pandas=2.1.1 scikit-learn=1.3.2 seaborn=0.12.2 scipy=1.11.4 joblib=1.2.0
