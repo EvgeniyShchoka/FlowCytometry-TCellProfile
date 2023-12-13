@@ -1,0 +1,9 @@
+# a content of outputs
+
+Data/LN_labeled_data.csv
+Models/*
+Images/*
+
+# .DS_store
+
+*/.DS_store
