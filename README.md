@@ -58,7 +58,7 @@ pip install -r requirements.txt
 Before running the .ipynb scripts, it is essential to set the correct working directory. This ensures that the code can correctly locate and access the data files and other resources. Insert a path to your folder in two scripts:
 
 ```
-os.chdir("/Users/moonbee/Cyto/Human_T_Cell_Profile/")
+os.chdir("<path-to-your-folder>/Human_T_Cell_Profile/")
 ```
 
 All .py scripts are launched from the root folder (/Human_T_Cell_Profile) with a specification of a root folder using commands:
