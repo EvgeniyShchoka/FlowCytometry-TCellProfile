@@ -2,16 +2,20 @@
 
 ## Project Structure
 
-### 1. [**Code_clusterization.ipynb**](/Code_clusterization.ipynb)
+### 1. [**Code_clusterization.ipynb**](Code/Code_clusterization.ipynb)
 
 Data Preprocessing: involves deletion of doublets and outliers, standardization, and normalization of the flow cytometry data.
 Dimensionality Reduction: implies UMAP to visualize multidimenstional data.
 Clusterization: identification of distinct cell populations.
 Identification of Cell Populations: the identification of specific cell populations based on their surface markers.
 
-### 2. [**Code_classification.ipynb**](/Code_classification.ipynb)
+### 2. [**Code_classification.ipynb**](Code/Code_classification.ipynb)
 
 Model Evaluation and Selection: detection of the optimal machine learning model for the characterization of immune cells. For classification Logistic regression, K-Nearest Neighbor, Naive Bayes, Random Forest, and Neural Network were used. Optimal hyperparameters were set using GridSearchCV().
+
+### 3. [**Classification.py**](Code/Classification.py); 4. [**Clusterization.py**](Code/Clusterization.py)
+
+Generation of outputs (Tables, Models, Images) using console.
 
 ## Data Acquisition
 
@@ -43,17 +47,23 @@ conda activate myenv
 
 ### Installing Specific Package Versions
 
-Once your environment is activated, you can install specific versions of packages required for your project:
+Once your environment is activated, you can install specific versions of packages required for your project. For this purpose use requirements.txt located in a main folder:
 
 ```
-conda install tensorflow=2.15.0 numpy=1.26.2 pandas=2.1.1 scikit-learn=1.3.2 seaborn=0.12.2 scipy=1.11.4 joblib=1.2.0
-pip install flowcal==1.3.0 umap-learn==0.5.5 hdbscan==0.8.33
+pip install -r requirements.txt
 ```
 
 ### Setting the Working Directory
 
-Before running the analysis scripts, it is essential to set the correct working directory. This ensures that the code can correctly locate and access the data files and other resources. Insert a path to your folder in two scripts:
+Before running the .ipynb scripts, it is essential to set the correct working directory. This ensures that the code can correctly locate and access the data files and other resources. Insert a path to your folder in two scripts:
 
 ```
 os.chdir("/Users/moonbee/Cyto/Human_T_Cell_Profile/")
+```
+
+All .py scripts are launched from the root folder (/Human_T_Cell_Profile) with a specification of a root folder using commands:
+
+```
+python /Code/Clusterization.py ./
+python /Code/Classification.py ./
 ```
