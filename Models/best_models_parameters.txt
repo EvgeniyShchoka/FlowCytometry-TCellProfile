@@ -1,0 +1,75 @@
+Model: Logistic_Regression
+Execution time: 18.82 seconds
+Best parameters: {'logreg__C': 100, 'logreg__penalty': 'l1', 'logreg__solver': 'liblinear'}
+Classification report:
+      Cell Type  precision   recall  f1-score      support
+CD14+ Monocytes   0.103896 0.005219  0.009938  1533.000000
+  CD20+ B cells   0.921369 0.992881  0.955789 10114.000000
+   CD4+ T cells   0.843033 0.918176  0.879002  9166.000000
+   CD8+ T cells   0.952548 0.691327  0.801183   784.000000
+    Other cells   0.913121 0.972616  0.941930  1059.000000
+       accuracy   0.884446 0.884446  0.884446     0.884446
+      macro avg   0.746793 0.716044  0.717568 22656.000000
+   weighted avg   0.835056 0.884446  0.854725 22656.000000
+--------------------------------------------------------------------------------
+
+Model: K-Nearest_Neighbors
+Execution time: 33.75 seconds
+Best parameters: {'knn__metric': 'manhattan', 'knn__n_neighbors': 9, 'knn__weights': 'distance'}
+Classification report:
+      Cell Type  precision   recall  f1-score      support
+CD14+ Monocytes   0.902527 0.815395  0.856751  1533.000000
+  CD20+ B cells   0.992646 0.987641  0.990137 10114.000000
+   CD4+ T cells   0.963415 0.982544  0.972885  9166.000000
+   CD8+ T cells   0.905897 0.920918  0.913346   784.000000
+    Other cells   0.963311 0.966950  0.965127  1059.000000
+       accuracy   0.970648 0.970648  0.970648     0.970648
+      macro avg   0.945559 0.934690  0.939649 22656.000000
+   weighted avg   0.970349 0.970648  0.970306 22656.000000
+--------------------------------------------------------------------------------
+
+Model: Naive_Bayes
+Execution time: 1.22 seconds
+Best parameters: {'nb__var_smoothing': 1e-06}
+Classification report:
+      Cell Type  precision   recall  f1-score      support
+CD14+ Monocytes   0.791377 0.371168  0.505329  1533.000000
+  CD20+ B cells   0.984463 0.933459  0.958283 10114.000000
+   CD4+ T cells   0.902735 0.957888  0.929494  9166.000000
+   CD8+ T cells   0.542553 0.975765  0.697356   784.000000
+    Other cells   0.847234 0.968839  0.903965  1059.000000
+       accuracy   0.908413 0.908413  0.908413     0.908413
+      macro avg   0.813672 0.841424  0.798885 22656.000000
+   weighted avg   0.916627 0.908413  0.904419 22656.000000
+--------------------------------------------------------------------------------
+
+Model: Random_Forest
+Execution time: 732.70 seconds
+Best parameters: {'rf__max_depth': None, 'rf__max_features': 'log2', 'rf__n_estimators': 300}
+Classification report:
+      Cell Type  precision   recall  f1-score      support
+CD14+ Monocytes   0.947867 0.913242  0.930233  1533.000000
+  CD20+ B cells   0.991894 0.992090  0.991992 10114.000000
+   CD4+ T cells   0.982876 0.989417  0.986136  9166.000000
+   CD8+ T cells   0.915924 0.917092  0.916507   784.000000
+    Other cells   0.974310 0.966950  0.970616  1059.000000
+       accuracy   0.981903 0.981903  0.981903     0.981903
+      macro avg   0.962574 0.955758  0.959097 22656.000000
+   weighted avg   0.981816 0.981903  0.981833 22656.000000
+--------------------------------------------------------------------------------
+
+Model: Neural Network
+Execution time: 2908.24 seconds
+Best parameters: (32, 0.2, 0.005, 64)
+Classification report:
+   Cell Type  precision   recall  f1-score      support
+           0   0.953746 0.954990  0.954368  1533.000000
+           1   0.988585 0.993277  0.990925 10114.000000
+           2   0.990997 0.984726  0.987852  9166.000000
+           3   0.930943 0.894133  0.912167   784.000000
+           4   0.948087 0.983003  0.965229  1059.000000
+    accuracy   0.983316 0.983316  0.983316     0.983316
+   macro avg   0.962472 0.962026  0.962108 22656.000000
+weighted avg   0.983316 0.983316  0.983282 22656.000000
+--------------------------------------------------------------------------------
+
